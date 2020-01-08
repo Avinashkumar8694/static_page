@@ -1,0 +1,172 @@
+.container {
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.container>* {
+    flex: 1 100%;
+}
+
+.setFlexAttribute {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;   
+}
+
+.profile-cover {
+    padding: 5px;
+    width: 97%;
+    text-align: center;
+}
+
+.cover {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline {
+    flex-flow: row wrap;
+}
+
+.timeline>* {
+    flex: 1 100%;
+}
+
+.navigation {
+    background-color: #1f252e;
+    color: white;
+    flex-direction: row;
+}
+
+.navigationItem {
+    padding: 20px 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.navigationItem:hover {
+    background-color: teal;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: #1f252e;
+    color: white;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.posts {
+    background-color: whitesmoke;
+    flex: 2;
+}
+
+.users {
+    background-color: azure;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.coverImage {
+    height: 200px;
+}
+
+.postTitle {
+    background-color: teal;
+    padding: 10px;
+    color: white;
+}
+
+.postImage {
+    border-radius: 10%;
+    flex: 1;
+    padding: 5px;
+}
+
+.postImage-size {
+    width: 80px;
+    height: 80px;
+}
+
+.post-img {
+    padding: 5px;
+    flex-direction: row;
+}
+
+.user-post {
+    flex: 8;
+    border: 2px solid black;
+}
+
+.postuser {
+    flex-direction: column;
+}
+
+.post-user-img {
+    display: none;
+}
+
+#img {
+    display: none;
+}
+
+.search {
+    flex: 3;
+    align-self: stretch;
+}
+
+.search-align {
+    flex-flow: row wrap;
+}
+
+@media all and (min-width: 600px) {
+    .alignPostUser {
+        flex: 1;
+    }
+    .post-user-img {
+        display: block;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .timeline {
+        flex: 7;
+        order: 2;
+        display: flex;
+    }
+    .setFlexToOne {
+        flex: 1;
+    }
+    .navigation {
+        order: 1;
+        flex-direction: column;
+    }
+    .posts {
+        order: 1;
+        flex: 2;
+    }
+    .users {
+        order: 2;
+    }
+    .menu {
+        flex-direction: row;
+    }
+    #img {
+        display: block;
+    }
+    .search {
+        flex: 3;
+        align-self: stretch;
+    }
+}
